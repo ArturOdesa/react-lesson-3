@@ -1,7 +1,8 @@
 import styles from './Main.module.css';
 import classNames from 'classnames';
 import data from '../../data/data.json';
-import Article from '../../components/Article/Article'
+import Article from '../../components/Article/Article';
+import Link from '../../components/Link/Link'
 
 function Main() {
     return (
@@ -11,11 +12,19 @@ function Main() {
                         <Article key={content.id} {...content} />
                         ))}
             </section>
-            <aside className={classNames(styles.aside)}>
-                <p>Lorem ipsum dolor sit.</p>
+            <aside className={classNames(styles.sidebar)}>
+                <div className={classNames(styles.sidebar__container)}>
+                    <nav className={classNames(styles.sidebar__menu)}>
+                        {data.map(content => (
+                            <Link key = {content.id} {...content} />
+                        ))}
+                    </nav>
+                </div>       
             </aside>
             </main>
     )
 }
+
+
 
 export default Main;
