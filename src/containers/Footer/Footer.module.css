@@ -1,0 +1,12 @@
+.footer {
+    background-color: #000710e0;
+    color: #fff;
+}
+
+.footer__container {
+    padding: 30px 10px;
+}
+
+.footer__title {
+    margin-bottom: 20px;
+}
