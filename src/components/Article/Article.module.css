@@ -1,0 +1,12 @@
+.article__container {
+padding: 0 30px;
+}
+
+.article__title {
+    margin-bottom: 20px;
+    color: #000710e0;
+}
+
+.article__container p {
+    color: #525252;
+}
